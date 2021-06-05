@@ -1,0 +1,37 @@
+{
+    "name": "tperrelli/inviare",
+    "description": "Tiago Perrelli Blog Package",
+    "type": "package",
+    "require": {
+        "illuminate/support": "^7.28",
+        "illuminate/http": "^7.28"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tperrelli\\Inviare\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tperrelli\\Inviare\\Tests\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tiago Perrelli",
+            "email": "tiagoyg@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tperrelli\\Inviare\\Providers\\AppServiceProvider"
+            ]
+        }
+    }
+}
